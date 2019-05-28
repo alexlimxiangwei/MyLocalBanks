@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         registerForContextMenu(btnDBS);
         registerForContextMenu(btnOCBC);
         registerForContextMenu(btnUOB);
-
-
     }
 
     // CONTEXT MENU CONTEXT MENU CONTEXT MENU CONTEXT MENU CONTEXT MENU CONTEXT MENU CONTEXT MENU CONTEXT MENU CONTEXT MENU CONTEXT MENU
@@ -54,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 url = getString(R.string.wwwDBS);
             }
             else if(btnPressed == R.id.btnOCBC){
-                url = getString(R.string.wwwDBS);
+                url = getString(R.string.wwwOCBC);
             }
             else{
-                url = getString(R.string.wwwDBS);
+                url = getString(R.string.wwwUOB);
             }
             Intent intent = new Intent(Intent. ACTION_VIEW, Uri.parse(url));
             startActivity(intent);
